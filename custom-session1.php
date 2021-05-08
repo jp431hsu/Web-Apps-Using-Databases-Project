@@ -12,8 +12,6 @@ Justin Pilecki
 
 April 24, 2020
 
-http://nrs-projects.humboldt.edu/~jp431/final/custom-session1.php
-
    uses: hsu_conn_sess.php
          destroy_and_exit.php
          create_login.php
