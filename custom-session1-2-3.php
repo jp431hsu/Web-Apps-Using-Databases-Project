@@ -12,8 +12,6 @@ Justin Pilecki
 
 May 3, 2020
 
-http://nrs-projects.humboldt.edu/~jp431/final/custom-session1-2-3.php
-
 -->
 
 <head>
