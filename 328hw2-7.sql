@@ -1,7 +1,3 @@
-spool 328hw2-7-out.txt
-
-prompt Justin Pilecki
-
 /* This function adds $2 to an employee's salary as part of the first year's
    raise when an employee passes review */
 
