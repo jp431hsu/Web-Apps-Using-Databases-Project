@@ -19,12 +19,12 @@ function update_salary($username, $password, $salary_update, $empl_choice)
    $salary_update = $_SESSION["salary"];
 
    oci_bind_by_name($empl_salary_update_stmt, ":salary_update",
-                    $salary_update);                               // ~~~line22
+                    $salary_update);
 
    oci_bind_by_name($empl_salary_update_stmt, ":empl_choice",
                     $empl_choice);
 
-   oci_execute($empl_salary_update_stmt, OCI_DEFAULT);    // ---------line27
+   oci_execute($empl_salary_update_stmt, OCI_DEFAULT);
 
    oci_commit($conn);
 
