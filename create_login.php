@@ -1,21 +1,6 @@
 <?php
 
 /*=====
-  START w/ a STUB!
-
-function create_login()
-{
-    ?>
-    <p> called create_login() </p>
-    <?php
-}
-=====*/
-
-/*=====
-  REPLACE with the "full" function
-=====*/
-
-/*=====
     function: create_login: void -> void
     purpose: expects nothing, returns nothing, and has the side-effect
         of outputting to the resulting document an Oracle log-on form
