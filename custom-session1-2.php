@@ -8,10 +8,6 @@
 
 <!--
 
-Justin Pilecki
-
-April 24, 2020
-
    uses: hsu_conn_sess.php
          destroy_and_exit.php
          create_login.php
@@ -33,8 +29,8 @@ April 24, 2020
         require_once("destroy_and_exit.php");
         require_once("create_login.php");
         require_once("create_empl_dropdown.php");
-        require_once("create_salary_form.php"); // <-----------hw10
-        require_once("update_salary.php"); // <-------------hw10
+        require_once("create_salary_form.php");
+        require_once("update_salary.php");
         require_once("get_empl_titles.php");
     ?>
 
@@ -46,7 +42,6 @@ April 24, 2020
 
 <body>
     <h1> Pet Care Boarding - Annual Raises! </h1>
-    <h2> Justin Pilecki CS 328 </h2>
  <p> <img src="https://www.nationaldebtrelief.com/wp-content/uploads/2015/10/The-Real-Effect-Of-A-Salary-Increase-On-Your-Life.jpg"
  alt="Hand pushing a search button for salary increase" />
  </p>
@@ -83,9 +78,7 @@ April 24, 2020
         $_SESSION["next_state"] = "empl_chosen";
     }
 
-// hw10 form update salary
-
-    elseif ($_SESSION['next_state'] == "empl_chosen")    //empl_chosen
+    elseif ($_SESSION['next_state'] == "empl_chosen")
     {
      	$username = $_SESSION["username"];
         $password = $_SESSION["password"];
@@ -107,8 +100,6 @@ April 24, 2020
 
         $_SESSION["next_state"] = "salary_update";
     }
-
-// hw10
 
     elseif (($_SESSION['next_state'] == "is_user_done") &&
             (array_key_exists("another_salary", $_POST)))
@@ -135,7 +126,7 @@ April 24, 2020
     elseif ($_SESSION["next_state"] == "empl_chosen")
     {
      	get_empl_titles();
-        $_SESSION['next_state'] = "is_user_done";  //is_user_done
+        $_SESSION['next_state'] = "is_user_done";
     }
 
     else
