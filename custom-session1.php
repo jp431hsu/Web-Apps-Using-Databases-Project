@@ -8,10 +8,6 @@
 
 <!--
 
-Justin Pilecki
-
-April 24, 2020
-
    uses: hsu_conn_sess.php
          destroy_and_exit.php
          create_login.php
@@ -44,7 +40,6 @@ April 24, 2020
 
 <body>
     <h1> Pet Care Boarding - Annual Raises! </h1>
-    <h2> Justin Pilecki CS 328 </h2>
  <p> <img src="https://www.nationaldebtrelief.com/wp-content/uploads/2015/10/The-Real-Effect-Of-A-Salary-Increase-On-Your-Life.jpg"
  alt="Hand pushing a search button for salary increase" />
  </p>
