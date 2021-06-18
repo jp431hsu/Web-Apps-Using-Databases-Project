@@ -6,7 +6,7 @@
 
 function funccall($username, $password, $empl_choice, $response)
 {
-   if ($response == "no")         //clicked the 'no' button
+   if ($response == "no")
    {
       destroy_and_exit("no employee selected");
    }
@@ -19,9 +19,9 @@ function funccall($username, $password, $empl_choice, $response)
 
    $looky = oci_parse($conn, $empl_id);
    oci_bind_by_name($looky, ":empl_choice", $empl_choice);
-   oci_execute($looky, OCI_DEFAULT);   //formerly $temp =
-   oci_fetch($looky);                     //new addition   line23
-   $temp = oci_result($looky, "EMPL_ID");                   //new addition
+   oci_execute($looky, OCI_DEFAULT);
+   oci_fetch($looky);
+   $temp = oci_result($looky, "EMPL_ID");
    oci_commit($conn);
    oci_free_statement($looky);
 ?>
